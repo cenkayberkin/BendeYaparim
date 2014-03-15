@@ -1,0 +1,126 @@
+﻿@model BendeYaparim.Web.Models.User
+@{
+	ViewBag.Title = "Edit";
+}
+@{
+	string gender;
+	if (Model.Gender)
+	{
+		gender = "Bay";
+	}
+	else
+	{
+		gender = "Bayan";
+	}
+}
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<!-- ikincil sol alan başlangıç -->
+		<td class="left_side" valign="top">
+			<!-- row 1 -->
+			<img src="../../Content/images/titles/profil.png" />
+			<div class="mleft20">
+				<div class="mleft20 left_shadow">
+					<span class="mavialan_bg">Benim Profilim</span>
+					<div class="clear">
+					</div>
+					<span class="mavialan_bg">adı</span> <span class="input left mleft10 w125">@Model.FirstName</span>
+					<span class="mavialan_bg mleft20">soyadı</span> <span class="input left mleft10 w125">@Model.LastName</span>
+					<div class="clear">
+					</div>
+					<span class="mavialan_bg">kullanıcı adı</span> <span class="input left mleft10 w125">@Model.UserName</span>
+					<span class="mavialan_bg mleft20">telefonu</span> <span class="input left mleft10 w125">@Model.PhoneNumber</span>
+					<div class="clear">
+					</div>
+					<span class="mavialan_bg">cinsiyeti</span> <span class="input left mleft10 w125">@gender</span>
+					<span class="mavialan_bg mleft20">üyelik tarihi</span> <span class="input left mleft10 w125">@Model.CreatedDate</span>
+					<div class="clear">
+					</div>
+					<span class="mavialan_bg">doğum yılı</span> <span class="input left mleft10 w125">@Model.BirthYear</span>
+					<span class="mavialan_bg mleft20">Email Adresi</span> <span class="input left mleft10 w125">@Model.Email</span>
+					<div class="clear">
+					</div>
+					<span class="mavialan_bg">yaşadığı şehir</span>
+					@if (Model.City != null)
+					{
+						<span class="input left mleft10 w125">@Model.City.Name</span>
+					}
+					else
+					{
+						<span class="input left mleft10 w125">Şehir yok</span>       
+					}
+					<span class="mavialan_bg mleft20">güncelleme</span> <span class="input left mleft10 w125">@Model.CreatedDate</span>
+					<div class="clear">
+					</div>
+				</div>
+				<br />
+				<br />
+				@Html.ActionLink("Çalışmak için ilan ver", "SeekCategoriesForCreate1", "JobSeek", null, new { @class = "myBtn mright20 right" })
+				@Html.ActionLink("Eleman aramak için ilan ver", "OfferCategoriesForCreate1", "JobOffer", null, new { @class = "myBtn mright20 right" })
+				<div class="clear">
+				</div>
+				<div class="hr">
+				</div>
+			</div>
+			<span class="myTitle">Benim İlanlarım</span>
+			<div class="clear">
+			</div>
+			@foreach (var item in Model.JobSeeks)
+			{
+				<span class="tarih_bg">@item.CreateDate</span> <span class="author_bg">@item.Owner.UserName</span>
+				<div class="clear">
+				</div>
+				<div class="mleft20 left_shadow">
+					<div class="mleft20">
+						<span class="@string.Format("icon_link {0}", item.Category.HtmlClassName)"><span
+							class="t2b turkuaz">@item.City.Name</span> <span class="t2b">' @MyHtmlHelper.CityNameExtension(item.City.NameExtension)
+								@MyHtmlHelper.PricePeriodStr(item.PricePeriod) </span><span class="t2b orange">@item.Price
+									TL </span><span class="t2b">'ye </span><span class="t2b turkuaz">@item.Category.Name</span><span
+										class="t2b"> veriyorum.</span> </span>
+						<p class="mleft40 pright20">
+							@MyHtmlHelper.ProfileContent(item.ContentBody)</p>
+						@Html.ActionLink("İlanı Kaldır", "Delete", "JobSeek", new { Id = item.Id }, new { @class = "myBtn mleft40" })
+						<div class="clear">
+						</div>
+						<div class="hr2">
+						</div>
+					</div>
+				</div>
+			}
+			@foreach (var item in Model.JobOffers)
+			{
+				<span class="tarih_bg">@item.CreateDate</span> <span class="author_bg">@item.Owner.UserName</span>
+				<div class="clear">
+				</div>
+				<div class="mleft20 left_shadow">
+					<div class="mleft20">
+						<span class="@string.Format("icon_link {0}", item.Category.HtmlClassName)"><span
+							class="t2b turkuaz">@item.City.Name</span> <span class="t2b">' @MyHtmlHelper.CityNameExtension(item.City.NameExtension)
+								@MyHtmlHelper.PricePeriodStr(item.PricePeriod) </span><span class="t2b orange">@item.Price
+									TL </span><span class="t2b">'ye </span><span class="t2b turkuaz">@item.Category.Name</span><span
+										class="t2b"> veren arıyorum.</span> </span>
+						<p class="mleft40 pright20">
+							@MyHtmlHelper.ProfileContent(item.ContentBody)</p>
+						@Html.ActionLink("İlanı Kaldır", "Delete", "JobOffer", new { Id = item.Id }, new { @class = "myBtn mleft40" })
+						<div class="clear">
+						</div>
+						<div class="hr2">
+						</div>
+					</div>
+				</div>
+			}
+			</div>
+		</td>
+		<!-- sol alan bitiş -->
+		<!-- sağ alan başlangıç -->
+		<td class="right_side" valign="top">
+			<p class="SubCont">
+				<center>
+					<img src="../../Content/images/banner.png" /></center>
+			</p>
+		</td>
+		<!-- sağ alan bitiş -->
+	</tr>
+</table>
+<div class="clear">
+</div>

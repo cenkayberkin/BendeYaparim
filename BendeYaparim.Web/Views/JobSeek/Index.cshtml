@@ -1,0 +1,129 @@
+@model  PagedList.IPagedList<BendeYaparim.Web.Models.JobSeek>
+@{
+    BendeYaparim.Web.Models.Category currentCategory = ViewBag.CategoryWithParent;
+    ViewBag.Title = currentCategory.PageTitle + " | " + "Bendeyaparim.com ilanlar";
+    ViewBag.Description = currentCategory.PageDescription + " | " + "Bendeyaparim.com ilanlar";
+}
+
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <!-- ikincil sol alan baþlangýç -->
+        <td class="left_side" valign="top">
+            <img src="../../Content/images/titles/aranotsag.png" class="right_title" />
+            <img src="../../Content/images/titles/hizmetver.png" />
+            <br />
+            <!-- arama ve kategori -->
+            <div class="mleft20">
+                <p>
+                    <a href="@Url.Action("OfferCategoriesForCreate1", "JobOffer")">
+                        <img src="../../Content/images/btn/ilanver.png" class="right mright20" /></a>
+                    <span class="@string.Format("icon_link {0} left", currentCategory.Parent.HtmlClassName)">@currentCategory.Parent.Name
+                    </span><span class="left mleft10 mright10 t2">|</span> <span class="@string.Format("icon_link {0} left", currentCategory.HtmlClassName)">
+                        @currentCategory.Name</span><div class="clear">
+                        </div>
+                </p>
+                <!-- arandýðý þehirler -->
+                <img src="../../Content/images/titles/versehir.png" />
+                <div class="mleft20 left_shadow">
+                    <div class="mleft20">
+                        @Html.Action("Cities", "JobSeek", new { CategoryId = ViewBag.CategoryId, SelectedCityId = ViewBag.SelectedCity })
+                        <a href="@Url.Action("Index", new { CategoryId = ViewBag.CategoryId, sortOrder = ViewBag.DateSortParm, CityId = ViewBag.SelectedCity, CategoryName = BendeYaparim.Web.CategoryNameConverterToUrl.ToFriendlyUrl(currentCategory.Name) })" class="myBtn">
+                            Tarihe göre sýrala</a> <a href="@Url.Action("Index", new { CategoryId = ViewBag.CategoryId, sortOrder = ViewBag.PriceSortParm, CityId = ViewBag.SelectedCity, CategoryName = BendeYaparim.Web.CategoryNameConverterToUrl.ToFriendlyUrl(currentCategory.Name) })" class="myBtn">
+                                Fiyata Göre Sýrala</a>
+                        <div class="clear">
+                        </div>
+                        <div class="hr2">
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <!-- row 1 -->
+                @foreach (var item in Model)
+                {
+                    <span class="tarih_bg">@item.CreateDate</span> 
+                    
+                    <a href="@Url.Action("Profile", "User", new { Id = item.Owner.UserId }, null)" class="author_bg">
+                        @item.Owner.UserName</a>
+                    
+                    <div class="clear">
+                    </div>
+                    <div class="mleft20 left_shadow">
+                        <div class="mleft20">
+                            <span class="@string.Format("icon_link {0}", item.Category.HtmlClassName)"><span
+                                class="t2b turkuaz">@item.City.Name</span> <span class="t2b">' @MyHtmlHelper.CityNameExtension(item.City.NameExtension)
+                                    @MyHtmlHelper.PricePeriodStr(item.PricePeriod) </span><span class="t2b orange">@item.Price
+                                        TL </span><span class="t2b">'ye </span><span class="t2b turkuaz">@item.Category.Name</span><span
+                                            class="t2b"> veriyorum.</span> </span>
+                            <p class="mleft40 pright20">
+                                @MyHtmlHelper.AdvertContent(item.ContentBody)</p>
+                            <a href="@Url.Action("Profile", "User", new { Id = item.Owner.UserId }, null)" class="myBtn mleft40">
+                                bi bakayým!</a>
+                            <div class="clear">
+                            </div>
+                            <div class="hr2">
+                            </div>
+                        </div>
+                    </div>
+                }
+                <span class="left t2">Sayfa <strong>@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)</strong>
+                    / @Model.PageCount</span>
+                <div class="right">
+                    @if (Model.HasPreviousPage)
+                    {
+                        <a href="@Url.Action("Index", new { page = 1, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn">
+                            Ýlk Sayfa</a>
+                        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn">
+                            &lt; Önceki Sayfa</a>
+                    }
+                    else
+                    { 
+                        <a href="@Url.Action("Index", new { page = 1, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn inactive_link2">
+                            Ýlk Sayfa</a>
+                        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn inactive_link2">
+                            &lt; Önceki Sayfa</a>
+                        
+                    }
+                    @if (Model.HasNextPage)
+                    {
+                        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn">
+                            Sonraki Sayfa &gt;</a>
+                        <a href="@Url.Action("Index", new { page = Model.PageCount, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn">
+                            En Son Sayfa</a>
+                    }
+                    else
+                    {
+                        
+                        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn inactive_link2">
+                            Sonraki Sayfa &gt;</a>
+                        <a href="@Url.Action("Index", new { page = Model.PageCount, sortOrder = ViewBag.CurrentSort, CategoryID = ViewBag.CategoryId, CityId = ViewBag.SelectedCity })" class="pageBtn inactive_link2">
+                            En Son Sayfa</a>
+                    }
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </td>
+        <!-- sol alan bitiþ -->
+        <!-- sað alan baþlangýç -->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+            <p>
+                <center>
+                    <img src="../../Content/images/menubanner.png" /></center>
+            </p>
+            <!--<div class="hr"></div>-->
+            <br />
+            @Html.Action("Top20JobOfferCategory", "Category")
+            @Html.Action("Top20JobSeekCategory", "Category")
+            <!--<div class="hr"></div>-->
+            <br />
+            <img src="../../Content/images/titles/facetebul.png" />
+            <p class="SubCont">
+                <img src="../../Content/images/facebox.png" /></p>
+        </td>
+        <!-- sað alan bitiþ -->
+    </tr>
+</table>

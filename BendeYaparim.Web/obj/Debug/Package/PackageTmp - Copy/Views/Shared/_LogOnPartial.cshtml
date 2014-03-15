@@ -1,0 +1,21 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <div id="header_topline" class="center">
+        <a href="#" class="myNick">@User.Identity.Name</a>
+        @Html.ActionLink("ÇIKIŞ", "LogOff", "Account", null, new { @class = "btn_l" })
+        @Html.ActionLink("YARDIM", "Help", "Account", null, new { @class = "btn_r" })
+        @Html.ActionLink("Eleman aramak için ilan ver", "OfferCategoriesForCreate1", "JobOffer", null, new { @class = "btn_r" })
+        @Html.ActionLink("Çalışmak için ilan ver", "SeekCategoriesForCreate1", "JobSeek", null, new { @class = "btn_r" })
+        @Html.ActionLink("İlanlarım ve Profil bilgilerim", "MyAdverts", "User", null, new { @class = "btn_r" })
+    </div>
+}
+else
+{
+    <div id="header_topline" class="center">
+        @Html.ActionLink("GİRİŞ", "LogOn", "Account", null, new { @class = "btn_l" })
+        @Html.ActionLink("Eleman aramak için ilan ver", "OfferCategoriesForCreate1", "JobOffer", null, new { @class = "btn_l" })
+        @Html.ActionLink("Çalışmak için ilan ver", "SeekCategoriesForCreate1", "JobSeek", null, new { @class = "btn_l" })
+        @Html.ActionLink("YARDIM", "Help", "Account", null, new { @class = "btn_r" })
+        @Html.ActionLink("Yeni kullanıcılar için Kayıt", "Register", "Account", null, new { @class = "btn_r" })
+    </div>
+}

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<BendeYaparim.Web.ViewModels.CityAdvertNumberGroup>
+<p class="pright10">
+@if (ViewBag.SelectedCity == 0)
+{
+    <a class="selectedCity" href="@Url.Action("Index", "JobSeek", new { CategoryId = ViewBag.CategoryID, CityId = 0 })">Turkiye Geneli |</a>
+}
+else
+{
+    <a href="@Url.Action("Index", "JobSeek", new { CategoryId = ViewBag.CategoryID, CityId = 0 })">
+        Bütün Türkiye | <span></span></a>
+}
+
+@foreach (var item in Model)
+{
+    if (item.City.Id == ViewBag.SelectedCity)
+    {
+    <a class="selectedCity" href="@Url.Action("Index", "JobSeek", new { CategoryId = ViewBag.CategoryID, CityId = item.City.Id })">
+        @item.City.Name (@item.AdvertNumber) | </a>
+    }
+    else
+    {
+    <a  href="@Url.Action("Index", "JobSeek", new { CategoryId = ViewBag.CategoryID, CityId = item.City.Id})">
+        @item.City.Name (@item.AdvertNumber) | </a>
+    }
+}
+</p>
+

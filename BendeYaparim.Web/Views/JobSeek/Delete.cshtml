@@ -1,0 +1,63 @@
+@model BendeYaparim.Web.Models.JobSeek
+@{
+    ViewBag.Title = "Delete";
+}
+
+<script type="text/javascript">
+    $("Document").ready(function () {
+        $("form").submit(function () {
+            $(":submit", this).attr("disabled", "disabled");
+        });
+    });
+    
+</script>
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <!-- ikincil sol alan baþlangýç -->
+        <td class="left_side" valign="top">
+            <div class="mleft20">
+                <span class="tarih_bg">Bu Ýlaný silmek istediðinizden eminmisiniz ?</span>
+                <div class="clear">
+                </div>
+                <div class="mleft20 left_shadow">
+                    <div class="mleft20">
+                        <span class="@string.Format("icon_link {0}", Model.Category.HtmlClassName)"><span
+                            class="t2b turkuaz">@Model.City.Name </span><span class="t2b">' @MyHtmlHelper.CityNameExtension(Model.City.NameExtension)
+                                @MyHtmlHelper.PricePeriodStr(Model.PricePeriod) </span><span class="t2b orange">@Model.Price
+                                    TL </span><span class="t2b">'ye </span><span class="t2b orange">@Model.Category.Name</span>
+                            <span class="t2b">veriyorum.</span> </span>
+                        <p class="mleft40 pright20">
+                            @MyHtmlHelper.ProfileContent(Model.ContentBody)</p>
+                        <div class="clear">
+                        </div>
+                        <div class="hr2">
+                        </div>
+                        @using (Html.BeginForm("DeleteConfirmed", "JobSeek", new { id = Model.Id }))
+                        {
+                            <p>
+                                <input type="submit" value="Sil" class="myBtn mleft40" />
+                                |
+                                @Html.ActionLink("Profilime geri dön", "MyAdverts", "User")
+                            </p>
+                        }
+                        <div class="clear">
+                        </div>
+                        <div class="hr2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <!-- sol alan bitiþ -->
+        <!-- sað alan baþlangýç -->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+        </td>
+        <!-- sað alan bitiþ -->
+    </tr>
+</table>
+<div class="clear">
+</div>

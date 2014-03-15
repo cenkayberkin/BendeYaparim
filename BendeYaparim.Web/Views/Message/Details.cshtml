@@ -1,0 +1,35 @@
+@model BendeYaparim.Web.Models.Message
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Message</legend>
+
+    <div class="display-label">FromUserId</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.FromUserId).ToString()</div>
+
+    <div class="display-label">From</div>
+    <div class="display-field">@(Model.From == null ? "None" : Model.From.LastName)</div>
+
+    <div class="display-label">ToUserId</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.ToUserId).ToString()</div>
+
+    <div class="display-label">To</div>
+    <div class="display-field">@(Model.To == null ? "None" : Model.To.LastName)</div>
+
+    <div class="display-label">SentAt</div>
+    <div class="display-field">@String.Format("{0:g}", Model.SentAt)</div>
+
+    <div class="display-label">ContentBody</div>
+    <div class="display-field">@Model.ContentBody</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.MessageId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

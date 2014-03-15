@@ -1,0 +1,156 @@
+﻿@model BendeYaparim.Web.Models.User
+@{
+    ViewBag.Title = "Edit";
+}
+<h2>
+    Edit</h2>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#PhoneNumber").mask("(999) 999-9999");
+    });
+    
+</script>
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <!-- ikincil sol alan başlangıç -->
+        <td class="left_side" valign="top">
+            <img src="../../Content/images/titles/kayit.png" />
+            <div class="mleft20">
+                <div class="mleft20 left_shadow">
+                    @using (Html.BeginForm())
+                    { 
+                        @Html.ValidationSummary(true, "Hesabınız oluşturulmadı lütfen eksik bilgileri girniz.") 
+                        
+                        <span class="mavialan_bg">kullanıcı adın *</span>
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.UserName)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">e-postan *</span>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.Email)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">e-postan tekrar</span>
+                        @Html.TextBoxFor(m => m.ConfirmEmail, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.ConfirmEmail)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">adın *</span>
+                        @Html.TextBoxFor(m => m.Name, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.Name)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">soyadın *</span>
+                        @Html.TextBoxFor(m => m.SirName, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.SirName)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">yaşadığın şehir *</span>
+                        @Html.DropDownListFor(a => a.CityId, (IEnumerable<SelectListItem>)ViewBag.Cities, new { @class = "input left mleft10" })
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">telefonun *</span>
+                        @Html.TextBoxFor(a => a.PhoneNumber, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.PhoneNumber)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">cinsiyetin *</span>
+                        <select class="input left mleft10">
+                            <option value="K">Kadın</option>
+                            <option value="E" selected="selected">Erkek</option>
+                        </select>
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">doğum yılın *</span>
+                        @Html.DropDownListFor(a => a.BirthYear, (IEnumerable<SelectListItem>)ViewBag.Years, new { @class = "input left mleft10" })
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">şifren *</span>
+                        @Html.PasswordFor(m => m.Password, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.Password)
+                        <div class="clear">
+                        </div>
+                        <span class="mavialan_bg">şifren tekrar *</span>
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "input left mleft10" })
+                        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                        <div class="clear">
+                        </div>
+                        <br />
+                        <div class="mleft20">
+                            <span class="turkuaz"><strong>*</strong></span> doldurulması zorunlu alanlar.<br />
+                            <!-- captcha -->
+                            <br />
+                            <input type="submit" value="GÖNDER" class="myBtn2" />
+                            <div class="clear">
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                    }
+                </div>
+            </div>
+        </td>
+        <!-- sol alan bitiş -->
+        <!-- sağ alan başlangıç -->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+        </td>
+        <!-- sağ alan bitiş -->
+    </tr>
+</table>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>User</legend>
+        @Html.HiddenFor(model => model.UserId)
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BirthYear)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BirthYear)
+            @Html.ValidationMessageFor(model => model.BirthYear)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PhoneNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PhoneNumber)
+            @Html.ValidationMessageFor(model => model.PhoneNumber)
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}

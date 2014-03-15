@@ -1,0 +1,41 @@
+@model BendeYaparim.Web.Models.JobSeek
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>JobSeek</legend>
+
+    <div class="display-label">ContentBody</div>
+    <div class="display-field">@Model.ContentBody</div>
+
+    <div class="display-label">CreateDate</div>
+    <div class="display-field">@String.Format("{0:g}", Model.CreateDate)</div>
+
+    <div class="display-label">DisplayCount</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.DisplayCount).ToString()</div>
+
+    <div class="display-label">Price</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Price)</div>
+
+    <div class="display-label">PricePeriod</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.PricePeriod).ToString()</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@(Model.City == null ? "None" : Model.City.Name)</div>
+
+    <div class="display-label">Owner</div>
+    <div class="display-field">@(Model.Owner == null ? "None" : Model.Owner.Name)</div>
+
+    <div class="display-label">Category</div>
+    <div class="display-field">@(Model.Category == null ? "None" : Model.Category.Name)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

@@ -1,0 +1,12 @@
+@model BendeYaparim.Web.Models.Message
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ContentBody)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ContentBody)
+    @Html.ValidationMessageFor(model => model.ContentBody)
+</div>
+

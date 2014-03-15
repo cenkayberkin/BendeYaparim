@@ -1,0 +1,65 @@
+@model IEnumerable<BendeYaparim.Web.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            Level
+        </th>
+        <th>
+            Parent
+        </th>
+        <th>
+            Children
+        </th>
+        <th>
+            JobSeeks
+        </th>
+        <th>
+            JobOffers
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "SubCategories", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.Level).ToString()
+        </td>
+        <td>
+			@(item.Parent == null ? "None" : item.Parent.Name)
+        </td>
+        <td>
+			@(item.Children == null ? "None" : item.Children.Count.ToString())
+        </td>
+        <td>
+			@(item.JobSeeks == null ? "None" : item.JobSeeks.Count.ToString())
+        </td>
+        <td>
+			@(item.JobOffers == null ? "None" : item.JobOffers.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

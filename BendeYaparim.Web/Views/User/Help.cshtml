@@ -1,0 +1,46 @@
+﻿@model BendeYaparim.Web.SendMessageToAdmin
+@{
+    ViewBag.Title = "Yardım sayfası | Bendeyaparım.com ilan sitesi";
+}
+<script type="text/javascript">
+    $("Document").ready(function () {
+        $("form").submit(function () {
+            if ($(this).valid()) {
+                $(":submit", this).attr("disabled", "disabled");
+            }
+        });
+    });
+</script>
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <!-- ikincil sol alan başlangıç -->
+        <td class="left_side" valign="top">
+            <div class="mleft40 mini">
+                Merhaba bir problemle karşılaştıysanız lütfen admin@bendeyaparim.com 'a email atınız
+                ve ya aşağıdaki formu kullanarak bize ulaşınız.
+            </div>
+            @using (Html.BeginForm())
+            {
+                <span class="mavialan_bg">Konu</span>
+                @Html.TextBoxFor(a => a.Title, new { @class = "input left mleft10", @style = "width: 300px;" })
+                <div class="clear">
+                </div>
+                <span class="mavialan_bg">Kısa Açıklama</span>
+                @Html.TextAreaFor(a => a.Content, new { @style = "width: 300px;", @rows = "6", @class = "left mleft10" })
+                
+                <div class="clear">
+                </div>
+                <input type="submit" value="GÖNDER" class="myBtn2 mleft20 left" style="margin-top: 55px;" />
+            }
+        </td>
+        <!-- sol alan bitiş -->
+        <!-- sağ alan başlangıç -->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+        </td>
+        <!-- sağ alan bitiş -->
+    </tr>
+</table>

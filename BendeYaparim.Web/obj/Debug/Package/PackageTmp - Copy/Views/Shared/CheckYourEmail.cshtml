@@ -1,0 +1,66 @@
+﻿<table cellpadding="0" cellspacing="0" width="100%"><tr>
+    <!-- sol alan başlangıcı -->
+    <td class="left_side" valign="top">
+    	<img src="images/titles/kayit.png" /><br />
+    	<div class="mleft40">
+        <img src="images/hand.png" align="left" class="mright20" />
+
+        <p class="pright10">
+        <br /><br />
+        "ben de yaparım" demeye az kaldı! E-posta adresine bir onay mesajı yollandı. Hesabını aktif etmek için, gelen mesajdaki aktivastyon linkine tıkla, sen de yap!
+        </p>
+        <p><a href="#" class="myBtn2"><strong>TAMAM</strong></a></p>
+        </div>
+    </td>
+    <!-- sol alan bitiş -->
+    <!-- sağ alan başlangıç-->
+
+    <td class="right_side" valign="top">
+    	<center><img src="images/menubanner.png" /></center>
+    </td>
+    <!-- sağ alan bitiş -->
+    </tr></table>
+
+
+<div id="ortaiki">
+    <div id="list1" style="height: 273px;" class="column">
+        <div id="ic" class="column">
+            <div class="sol column">
+                <span class="column" style="padding-right: 550px;">
+                    <img src="@Url.Content("~/Content/imgs/kayit.png")" border="0"/>
+                </span>
+                <div class="column border">
+                    <div class="sehirp column">
+                        <div class="column onaybox">
+                            <img src="@Url.Content("~/Content/imgs/el.png")" border="0" /></div>
+                        @using (Html.BeginForm())
+                        {
+                            <div class="column onayboxyaz">
+                                "ben de yaparım" demeye az kaldı! E-posta adresine bir onay mesajı yollandı. Hesabını
+                                aktif etmek için, gelen mesajdaki aktivastyon linkine tıkla, sen de yap!
+                                <input type="submit" class="mavibuton" style="margin-left: 10px;" value="TAMAM" />
+                            </div>
+                        }
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                    <div class="span-2 last">
+                    </div>
+                    <div class="span-0 column">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="last">
+        <div class="banner column">
+            <img src="@Url.Content("~/Content/imgs/menubanner.png")" border="0"/></div>
+        <div class="span-5 last">
+        </div>
+        <div class="span-5 last">
+        </div>
+        <div class="span-5 last">
+        </div>
+    </div>
+</div>

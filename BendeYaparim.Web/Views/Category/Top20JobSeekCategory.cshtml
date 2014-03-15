@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BendeYaparim.Web.Models.Category>
+<span class="myTitle">En popüler çalışmak istenen kategoriler.</span>
+<div class="clear">
+</div>
+<p class="SubCont turkuaz">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("Index", "JobSeek", new { CategoryId = item.Id, CategoryName = BendeYaparim.Web.CategoryNameConverterToUrl.ToFriendlyUrl(item.Name) })" class="t2">
+            @item.Name (@item.NumberOfJobSeeks)</a> 
+    }
+</p>
+<!--<div class="hr"></div>-->
+<br />

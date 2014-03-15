@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BendeYaparim.Web.Models.Category>
+<span class="myTitle">En cok eleman aranan kategoriler.</span>
+<div class="clear">
+</div>
+<p class="SubCont turkuaz">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("Index", "JobOffer", new { CategoryId = item.Id })" class="t2">
+            @item.Name (@item.NumberOfJobOffers)</a> 
+    }
+</p>
+<!--<div class="hr"></div>-->
+<br />

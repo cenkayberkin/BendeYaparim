@@ -1,0 +1,44 @@
+@model BendeYaparim.Web.Models.JobSeek
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>JobSeek</legend>
+
+    <div class="display-label">ContentBody</div>
+    <div class="display-field">@Model.ContentBody</div>
+
+    <div class="display-label">CreateDate</div>
+    <div class="display-field">@String.Format("{0:g}", Model.CreateDate)</div>
+
+    <div class="display-label">DisplayCount</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.DisplayCount).ToString()</div>
+
+    <div class="display-label">Price</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Price)</div>
+
+    <div class="display-label">PricePeriod</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.PricePeriod).ToString()</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@(Model.City == null ? "None" : Model.City.Name)</div>
+
+    <div class="display-label">Owner</div>
+    <div class="display-field">@(Model.Owner == null ? "None" : Model.Owner.Name)</div>
+
+    <div class="display-label">Category</div>
+    <div class="display-field">@(Model.Category == null ? "None" : Model.Category.Name)</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

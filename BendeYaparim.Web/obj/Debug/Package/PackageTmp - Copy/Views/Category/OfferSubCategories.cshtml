@@ -1,0 +1,68 @@
+﻿@model BendeYaparim.Web.Models.Category
+@{
+    ViewBag.Title = "SeekSubCategories";
+}
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <!-- ikincil sol alan başlangıç -->
+        <td class="left_side" valign="top">
+            <span class="myTitle">Hizmetin arandığı alt kategoriler.</span>
+            <div class="clear">
+            </div>
+            <table class="mleft20" width="90%">
+                <tr>
+                    <td>
+                        <span class="@string.Format("icon_link {0} left", Model.HtmlClassName)">@Model.Name</span>
+                        <div class="clear">
+                        </div>
+                        <div class="hr2">
+                        </div>
+                    </td>
+                </tr>
+                @foreach (var item in Model.Children)
+                {
+                    <tr>
+                        <td>
+                            <span class="@string.Format("icon_link left mleft10 {0}", item.HtmlClassName)">
+                                @item.Name</span>
+                            <div class="clear">
+                            </div>
+                            <div class="hr2">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="icon_list mleft40">
+                                @foreach (var i in item.Children)
+                                {
+                                    <li><a href="@Url.Action("Index", "JobOffer", new { CategoryId = @i.Id })" class="@string.Format("icon_link {0}", i.HtmlClassName)">@i.Name</a></li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </td>
+        <!-- sol alan bitiş -->
+        <!-- sağ alan başlangıç -->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+            <p>
+                <center>
+                    <img src="../../Content/images/menubanner.png" /></center>
+            </p>
+            <!--<div class="hr"></div>-->
+            <br />
+            @Html.Action("Top20JobOfferCategory", "Category")
+            @Html.Action("Top20JobSeekCategory", "Category")
+            <img src="../../Content/images/titles/facetebul.png" />
+            <p class="SubCont">
+                <img src="../../Content/images/facebox.png" /></p>
+        </td>
+        <!-- sağ alan bitiş -->
+    </tr>
+</table>

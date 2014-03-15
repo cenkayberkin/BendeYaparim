@@ -1,0 +1,36 @@
+﻿@model IEnumerable<BendeYaparim.Web.Models.Category>
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50%">
+            <img src="../../Content/images/titles/hizmetiariyorum.png" />
+            <a href="@Url.Action("OfferCategoriesForCreate1", "JobOffer")">
+                <img src="../../Content/images/btn/ilanver.png" class="right mright20" /></a>
+            <ul class="icon_list w250">
+                @foreach (var item in Model)
+                {
+                    <li><a href="@Url.Action("OfferSubCategories", "Category", new { Id = item.Id })" class="@string.Format("icon_link {0}",item.HtmlClassName)">@item.Name</a></li>
+                }
+            </ul>
+        </td>
+        <td width="50%">
+            <img src="../../Content/images/titles/hizmetiveriyorum.png" />
+            <a href="@Url.Action("SeekCategoriesForCreate1", "JobSeek")">
+                <img src="../../Content/images/btn/ilanver.png" class="right mright20" /></a>
+            <ul class="icon_list w250 left_shadow">
+                @foreach (var item in Model)
+                {
+                    
+                    <li><a href="@Url.Action("SeekSubCategories", "Category", new { Id = item.Id })" class="@string.Format("icon_link {0}",item.HtmlClassName)">@item.Name</a></li>
+                }
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="../../Content/images/titles/aranot.png" />
+        </td>
+        <td>
+            <img src="../../Content/images/titles/vernot.png" />
+        </td>
+    </tr>
+</table>

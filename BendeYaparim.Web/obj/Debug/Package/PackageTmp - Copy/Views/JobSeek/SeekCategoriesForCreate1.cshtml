@@ -1,0 +1,37 @@
+﻿@model IEnumerable<BendeYaparim.Web.Models.Category>
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td class="left_side" valign="top">
+            <!-- sol alan başlangıcı -->
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td width="50%">
+                        <span class="myTitle">Çalışmak istediğin kategoriyi seç.</span>
+                        <div class="clear">
+                        </div>
+                        <ul class="icon_list">
+                            @foreach (var item in Model)
+                            {
+                                <li><a href="@Url.Action("SeekCategoriesForCreate2", "JobSeek", new { Id = item.Id })" class="@string.Format("icon_link {0}", item.HtmlClassName)">@item.Name</a></li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../../Content/images/titles/aranot.png" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <!-- sol alan bitiş -->
+        <!-- sağ alan başlangıç-->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+        </td>
+        <!-- sağ alan bitiş -->
+    </tr>
+</table>

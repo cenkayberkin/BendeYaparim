@@ -1,0 +1,56 @@
+@model IEnumerable<BendeYaparim.Web.Models.Message>
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <!-- ikincil sol alan baþlangýç -->
+        <td class="left_side" valign="top">
+            <!-- row 1 -->
+            <span class="myTitle">Bana gelen mesajlar.</span>
+            <div class="clear">
+            </div>
+            @if (Model.Count() == 0)
+            {
+                
+                <div class="mleft20">
+                    <p class="mleft20 pright20">
+                        Hiç mesajýnýz yok.
+                    </p>
+                </div>
+               
+            }
+            else
+            {
+                foreach (var item in Model)
+                {
+                <span class="myTitle">Gönderen: @item.From.UserName</span>
+                <a href="@Url.Action("Profile", "User", new { Id = item.From.UserId }, null)" class="myTitle">
+                    Gönderen: @item.From.UserName </a>
+                <div class="clear">
+                </div>
+                <div class="mleft20">
+                    Býrakýlma tarihi: @item.SentAt
+                    <p class="mleft40 pright20">
+                        @item.ContentBody
+                    </p>
+                    @Html.ActionLink("Mesajý Sil", "Delete", "Message", new { id = item.MessageId }, new { @class = "myBtn mleft40" })
+                    <div class="clear">
+                    </div>
+                    <div class="hr2">
+                    </div>
+                </div>
+            
+                }
+            }
+        </td>
+        <!-- sol alan bitiþ -->
+        <!-- sað alan baþlangýç -->
+        <td class="right_side" valign="top">
+            <p class="SubCont">
+                <center>
+                    <img src="../../Content/images/banner.png" /></center>
+            </p>
+        </td>
+        <!-- sað alan bitiþ -->
+    </tr>
+</table>
+<div class="clear">
+</div>

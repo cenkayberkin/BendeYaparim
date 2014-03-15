@@ -1,0 +1,382 @@
+1Ev hayatý|ev
+2Kiþisel yardým|kisisel
+3Çocuk Bakýcýlýðý hizmeti|cocuk2
+3Yaþlý bakým hizmeti|kisisel
+3Engellilere yardým hizmeti|kisisel
+2Ev iþleri|evisleri
+3Ev temizliði hizmeti|evisleri
+3Aþçýlýk hizmeti|yemek
+3Çamaþýr yýkama ve Ütü yapma hizmeti|elbeceri
+2Teknoloji|teknoloji
+3Bilgisayar ve internet kurulum bakým hizmeti|int
+2Evcil hayvan|evcil
+3Evcil hayvanlara pansiyon hizmeti|evcil
+3Köpek eðitimi|evisleri
+2Diðer hizmetler|evdiger
+3Ev taþýma hizmeti|ev
+3Haþere ilaçlama hizmeti|ev
+3Çilingir hizmeti|bakim
+1Bakým,Onarým|bakim
+2Ev Ofis|evisleri
+3Parke yer onarýmý hizmeti|bakim
+3Badana /boya/sýva hizmeti|bakim
+3Elektrik iþleri hizmeti|bakim
+3Su tesisat iþleri hizmeti|bakim
+3Kalorifer tesisat iþleri hizmeti|bakim
+3Demir doðrama , kaynakçýlýk hizmeti|bakim
+3Cam / PVC onarýmý hizmeti|bakim
+3Marangozluk hizmeti|bakim
+3Terzi iþleri hizmeti|elbeceri
+1Eðitim|egitim
+2Sýnava hazýrlýk|sinav
+3YGS için Geometri dersi|temelegitim
+3YGS için Matematik dersi|temelegitim
+3YGS için Türkçe dersi|temelegitim
+3YGS için Sosyal Bilimler dersi|temelegitim
+3YGS için Fen Bilimleri dersi|temelegitim
+3LYS1 için Matematik-Geometri dersi|temelegitim
+3LYS2 için Fen Bilimleri dersi|temelegitim
+3LYS3 için Edebiyat - Coðrafya dersi|temelegitim
+3LYS4 için Sosyal Bilimler dersi|temelegitim
+3LYS5 için Yabancý Dil dersi|temelegitim
+3KPSS hazýrlýk dersi|sinav
+3KPDS hazýrlýk dersi|sertifika
+3ÜDS hazýrlýk dersi|sertifika
+3SMMM hazýrlýk dersi|sertifika
+3LES hazýrlýk dersi|sertifika
+3ALES hazýrlýk dersi|sertifika
+3DGS hazýrlýk dersi|sinav
+3TOEFL hazýrlýk dersi|sinav
+3ESL hazýrlýk dersi|sinav
+3IELTS hazýrlýk dersi|sinav
+3GRE hazýrlýk dersi|sertifika
+3GMAT hazýrlýk dersi|sertifika
+3SAT hazýrlýk dersi|sinav
+2Yabancý Dil|yabancidil
+3Ýngilizce dersi|egitim
+3Fransýzca dersi|egitim
+3Rusça dersi|egitim
+3Çince dersi|egitim
+3Ýtalyanca dersi|egitim
+3Ýspanyolca dersi|egitim
+3Japonca dersi|egitim
+3Almanca dersi|egitim
+3Flemenkçe dersi|egitim
+3Arapça dersi|egitim
+3Farsça dersi|egitim
+3Hintçe dersi|egitim
+3Ýbranice dersi|egitim
+3Latince dersi|egitim
+3Osmanlýca dersi|egitim
+3Yunanca dersi|egitim
+3Özbekçe dersi|egitim
+3Yabancýlar için Türkçe dersi|egitim
+2Okul Destek (Ýlk)|cocuk2
+3Matematik dersi (ilk öðretim)|okulilk
+3Geometri dersi (ilk öðretim)|okulilk
+3Fen ve Teknoloji dersi (ilk öðretim)|okulilk
+3Sosyal Bilgiler dersi (ilk öðretim)|okulilk
+3Hayat Bilgisi dersi (ilk öðretim)|okulilk
+3Ýngilizce dersi (ilk öðretim)|okulilk
+3Almanca dersi (ilk öðretim)|okulilk
+3Fransýzca dersi (ilk öðretim)|okulilk
+3Türkçe dersi (ilk öðretim)|okulilk
+3Ýlkokuma - Yazma dersi|okulilk
+20kul Destek (Lise)|okul
+3Matematik dersi (lise)|egitim
+3Geometri dersi (lise)|egitim
+3Ýngilizce dersi (lise)|egitim
+3Almanca dersi (lise)|egitim
+3Fransýzca dersi (lise)|egitim
+3Türkçe dersi (lise)|egitim
+3Edebiyat dersi (lise)|egitim
+3Biyoloji dersi (lise)|egitim
+3Fizik dersi (lise)|egitim
+3Kimya dersi (lise)|egitim
+3Tarih dersi (lise)|egitim
+3Coðrafya dersi (lise)|egitim
+3Felsefe dersi (lise)|egitim
+2Proje / Ödev Destek|proje
+3Bitirme Projesi desteði|sertifika
+3Tez yazýmý desteði|proje
+3Dönem Ödevi desteði|proje
+3Hikaye yazarlýðý hizmeti|sanat
+3Sertifika eðitimleri|sertifika
+3PMP Proje Yönetimi Sertifikasý eðitimi|sertifika
+3CIA Uluslararasý Ýç Denetçi Sertifikasý eðitimi|sertifika
+3CMA Sertifikasý eðitimi|sertifika
+3CFM Sertifikasý eðitimi|sertifika
+3Açýköðretim egitimi|acikogretim
+3Ýktisada Giriþ dersi|egitim
+3Ýktisat Teorisi dersi|egitim
+3Ýþletme dersi|egitim
+3Ýstatistik dersi|egitim
+3Muhasebe Denetimi ve Mali Analiz dersi|egitim
+3Muhasebe Uygulamalarý dersi|egitim
+3Maliyet Muhasebesi dersi|egitim
+3Kamu Maliyesi dersi|egitim
+3Finansal Yönetim dersi|egitim
+3Hukuk dersi|egitim
+3Yönetim Bilgi Sistemleri dersi|egitim
+2Diðer hizmetler|evdiger
+3Yurtdýþý eðitim danýþmanlýðý|egitim
+3Eðitim danýþmanlýðý|egitim
+1Sanat, Zanaat|sanat
+2El Becerileri|elbeceri
+3Dikiþ / nakýþ dersi|elbeceri
+3Tekstil aksesuarlarý yapým hizmeti|elbeceri
+3Örgü / dantel dersi|elbeceri
+3Örgü / dantel iþçiliði hizmeti|elbeceri
+3Çanak / çömlek yapma dersi|elbeceri
+3Taký tasarýmý hizmeti|elbeceri
+3Vitray /cam boyama hizmeti|elbeceri
+3Seramik dersi|elbeceri
+3Dekoratif ev aksesuarlarý tasarýmý|elbeceri
+3Taþ baský boncuk iþleme hizmeti|elbeceri
+3Dövme / Tatoo hizmeti|elbeceri
+3Model uçak yapým hizmeti|elbeceri
+3Model uçak uçuþ eðitimi|elbeceri
+2Müzik|muzik
+3Gitar dersi|muzik
+3Bas gitar dersi|muzik
+3Keman dersi|muzik
+3Piyano dersi|muzik
+3Org (Keyboard) dersi|muzik
+3Flüt dersi|muzik
+3Klarnet dersi|muzik
+3Viyola dersi|muzik
+3Viyolonsel dersi|muzik
+3Davul dersi|muzik
+3Saz dersi|muzik
+3Þan dersi|muzik
+3Solfej dersi|muzik
+3Nota okuma / yazma dersi|muzik
+3Ritim dersi|muzik
+3Konservatuara hazýrlýk dersi|muzik
+3Þarký sözü yazarlýðý hizmeti|muzik
+2Görsel Sanat|sanat
+3Resim (kara kalem) dersi|sanat
+3Resim (yaðlý boya) dersi|sanat
+3Karikatür dersi|sanat
+3Heykeltraþlýk dersi|gorsel
+3Fotoðrafçýlýk dersi|gorsel
+3Ahþap boyama hizmeti|gorsel
+2Yemek Piþirme|yemek
+3Türk yemekleri dersi|yemek
+3Ýtalyan yemekleri dersi|yemek
+3Uzak doðu yemekleri dersi|yemek
+3Vejeteryan yemekleri dersi|yemek
+3Meksika yemekleri dersi|yemek
+3Fýrýn/hamur iþleri yemekleri dersi|yemek
+2Dans|dans
+3Vals dans dersi|dans
+3Tango dans dersi|dans
+3Salsa dans dersi|dans
+3Samba dans dersi|dans
+3Oryantal dans dersi|dans
+3Halk oyunlarý dersi|dans
+2Moda|moda
+3Stilistlik hizmeti|moda
+3Tekstil tasarýmý hizmeti|moda
+3Mankenlik hizmeti|moda
+3Fotomodellik hizmeti|moda
+2Kiþisel Geliþim|guzellik
+3Hýzlý Okuma dersi|egitim
+3Diksiyon dersi|egitim
+3Tiyatro/Sinema oyunculuk dersi|evis
+3Kompozisyon yazma dersi|egitim
+3Motivasyon dersi|egitim
+3Öðrenci Koçluðu dersi|egitim
+3Briç dersi|egitim
+3Satranç dersi|egitim
+3Astroloji dersi|egitim
+3Direksiyon dersi|egitim
+3Ýmaj danýþmanlýðý hizmeti|ozel
+1Saðlýk, Güzellik|saglik
+2Saðlýklý Yaþam|saglikliyasam
+3Yoga dersi|saglikliyasam
+3Pilates dersi|saglikliyasam
+3Reiki dersi|saglikliyasam
+3Feng Shui dersi|saglikliyasam
+3Nefes dersi|saglikliyasam
+3Meditasyon dersi|saglikliyasam
+3Tai chi dersi|saglikliyasam
+3Tai masaj hizmeti|saglikliyasam
+3Bali masaj hizmeti|saglikliyasam
+3Aromaterapi hizmeti|saglikliyasam
+3Saðlýklý yaþam, saðlýklý beslenme danýþmanlýðý hizmeti|saglik2
+3Spor koçluðu (personal trainer) hizmeti|saglik2
+3Yaþam koçluðu hizmeti|saglik
+2Spor|spor
+3Boks dersi|spor
+3Tenis dersi|spor
+3Yüzme dersi|spor
+3Dalgýçlýk dersi|spor
+3Beden Eðitimi ve Spor Okullarýna hazýrlýk dersi|egitim
+2Güzellik / Bakým hizmeti|guzellik
+3Manikür-Pedikür hizmeti|guzellik
+3Makyaj hizmeti|guzellik
+3Kuaför / Saç bakým hizmeti|guzellik
+3Cilt bakýmý hizmeti|guzellik
+3Epilasyon hizmeti|guzellik
+3Selülit tedavisi hizmeti|guzellik
+1Ýþ, Profesyonel|is
+2Görsel Tasarým hizmeti|gorseltasarim
+3Photoshop eðitimi|temelegitim
+3Dekupe hizmeti|temelegitim
+3Grafik tasarým eðitimi|temelegitim
+3Baský tasarým eðitimi|gorsel
+3AUTOCAD eðitimi|genelyazilim
+3CAD / CAM eðitimi|genelyazilim
+3CATIA eðitimi|genelyazilim
+3Solidworks eðitimi|genelyazilim
+3Görüntü efekt ve hareketli grafik hizmeti|genelyazilim
+33D Max eðitimi|genelyazilim
+2Reklam / Tanýtým hizmeti|reklam
+3Jingle bestesi hizmeti|muzik
+3Kartvizit tasarýmý hizmeti|gorseltasarim
+3Kurumsal kimlik / Logo tasarým hizmeti|gorseltasarim
+3Broþür / katalog tasarým hizmeti|gorseltasarim
+3Metin yazarlýðý hizmeti|egitim
+3Reklam danýþmanlýðý hizmeti|reklam
+3Baský hizmeti hizmeti|gorsel
+3Dizgi hizmeti hizmeti|gorsel
+3360 derece mekan çekimi hizmeti|gorsel
+3Reklam fotoðrafçýlýðý hizmeti|gorsel
+3Halkla Ýliþkiler / Kurumsal Ýletiþim danýþmanlýðý|idari
+3Pazarlama Ýletiþimi danýþmanlýðý|idari
+3Ýlan ve broþür daðýtma hizmeti|gorsel
+2Ýþ Yönetimi hizmeti|isyonetimi
+3Vergi danýþmanlýðý hizmeti|is
+3Sigorta danýþmanlýðý hizmeti|is
+3Proje koordinatörlüðü hizmeti|proje
+3Muhasebe hizmeti (küçük ölçekli iþletmede)|is2
+3Dýþ ticaret danýþmanlýðý hizmeti|is2
+3Üretim danýþmanlýðý hizmeti|is2
+3Enerji danýþmanlýðý hizmeti|is2
+3Ziraat danýþmanlýðý hizmeti|is2
+2Ýdari / Ofis Ýþleri hizmeti|idari
+3Editörlük hizmeti hizmeti|egitim
+3Yazý yazma (daktilo/bilgisayar ile) hizmeti|egitim
+3Data giriþi (bilgisayar ile) hizmeti|ileriegitim
+3Þoförlük hizmeti|elbeceri
+3Kurye hizmeti|cocuk
+3Belediyelerde ve kamu kurumlarýnda iþ takibi hizmeti|isyonetim
+3Fatura yatýrma hizmeti|isyonetim
+3Araba muayenesi hizmeti|cocuk
+2Diðer|evdiger
+3Bilimsel araþtýrma hizmeti|int
+3Sunum hazýrlama desteði|proje
+3Mimari danýþmanlýk hizmeti|egitim
+3Ýnþaat teknik çizimi hizmeti|egitim
+3Makine teknik hizmeti|egitim
+33D çizim hizmeti|temelegitim
+3Ses ve Görüntü Çözümleme (deþifre) hizmeti|muzik
+3Spikerlik ve Seslendirme hizmeti|muzik
+3Ofis taþýma hizmeti|idari
+3Ofis temizliði hizmeti|elbeceri
+3Paketleme hizmeti|elbeceri
+3Araç teslimat (vale) hizmeti|cocuk
+3Özel Koruma (Bodyguard) hizmeti|arac
+3Anket katýlýmcýlýðý hizmeti|ozel
+3Ýlan takibi hizmeti|ozel
+3Gece bekçiliði hizmeti|arac
+3Turizm rehberliði hizmeti|ozel
+1Çeviri, Tercümanlýk|cevir2
+2Tercümanlýk|tercumanlik
+3Ýngilizce tercümanlýk hizmeti|tercumanlik
+3Fransýzca tercümanlýk hizmeti|tercumanlik
+3Almanca tercümanlýk hizmeti|tercumanlik
+3Flemenkçe tercümanlýk hizmeti|tercumanlik
+3Rusça tercümanlýk hizmeti|tercumanlik
+3Çince tercümanlýk hizmeti|tercumanlik
+3Ýtalyanca tercümanlýk hizmeti|tercumanlik
+3Ýspanyolca tercümanlýk hizmeti|tercumanlik
+3Portekizce tercümanlýk hizmeti|tercumanlik
+3Japonca tercümanlýk hizmeti|tercumanlik
+3Arapça tercümanlýk hizmeti|tercumanlik
+3Farsça tercümanlýk hizmeti|tercumanlik
+3Hintçe tercümanlýk hizmeti|tercumanlik
+3Ýbranice tercümanlýk hizmeti|tercumanlik
+3Latince tercümanlýk hizmeti|tercumanlik
+3Osmanlýca tercümanlýk hizmeti|tercumanlik
+3Ermenice tercümanlýk hizmeti|tercumanlik
+3Yunanca tercümanlýk hizmeti|tercumanlik
+3Bulgarca tercümanlýk hizmeti|tercumanlik
+3Romence tercümanlýk hizmeti|tercumanlik
+3Çekçe tercümanlýk hizmeti|tercumanlik
+3Macarca tercümanlýk hizmeti|tercumanlik
+3Özbekçe tercümanlýk hizmeti|tercumanlik
+3Tacikçe tercümanlýk hizmeti|tercumanlik
+2Çeviri|cevir2
+3Ýngilizce çeviri hizmeti|cevir2
+3Fransýzca çeviri hizmeti|cevir2
+3Almanca çeviri hizmeti|cevir2
+3Flemenkçe çeviri hizmeti|cevir2
+3Rusça çeviri hizmeti|cevir2
+3Çince çeviri hizmeti|cevir2
+3Ýtalyanca çeviri hizmeti|cevir2
+3Ýspanyolca çeviri hizmeti|cevir2
+3Portekizce çeviri hizmeti|cevir2
+3Japonca çeviri hizmeti|cevir2
+3Arapça çeviri hizmeti|cevir2
+3Farsça çeviri hizmeti|cevir2
+3Hintçe çeviri hizmeti|cevir2
+3Ýbranice çeviri hizmeti|cevir2
+3Latince çeviri hizmeti|cevir2
+3Osmanlýca çeviri hizmeti|cevir2
+3Ermenice çeviri hizmeti|cevir2
+3Yunanca çeviri hizmeti|cevir2
+3Bulgarca çeviri hizmeti|cevir2
+3Romence çeviri hizmeti|cevir2
+3Çekçe çeviri hizmeti|cevir2
+3Macarca çeviri hizmeti|cevir2
+3Özbekçe çeviri hizmeti|cevir2
+3Tacikçe çeviri hizmeti|cevir2
+1Biliþim, Ýnternet|int
+2Eðitim (Temel)|temelegitim
+3PowerPoint ve Sunum Teknikleri eðitimi|is
+3Excel eðitimi|is
+3Word eðitimi|is
+3Windows iþletim sistemi eðitimi|temelegitim
+3Linux iþletim sistemi eðitim|temelegitim
+3MAC iþletim sistemi eðitimi|temelegitim
+3Bilgisayar baþlangýç eðitimi|temelegitim
+2Eðitim (Ýleri)|ileriegitim
+3Java ile programlama eðitimi|genelyazilim
+3PHP ile programlama eðitimi|genelyazilim
+3.NET ile programlama eðitimi|genelyazilim
+3SQL ve Veri Tabaný eðitimi|genelyazilim
+3Bilgisayar destekli CNC - CAM eðitimi|genelyazilim
+3Forex eðitimi|genelyazilim
+3Web sitesi tasarým eðitimi|websitesi
+2Web Sitesi|websitesi
+3Web Sitesi tasarýmý hizmeti|websitesi
+3Wordpress ile tasarým hizmeti|websitesi
+3Wordpress desteði hizmeti|websitesi
+3E-ticaret sitesi tasarýmý hizmeti|websitesi
+3Arama Motoru Optimizasyonu (SEO) hizmeti|int2
+3Web için Video Çekme / Düzenleme hizmeti|int2
+3Web için Fotoðraf Çekme / Düzenleme hizmeti|int2
+3Internet banner tasarýmý / uygulama hizmeti|int2
+3Internet medya planlamasý hizmeti|int2
+3Google Adwords danýþmanlýðý hizmeti|int2
+3Facebook Ads danýþmanlýðý hizmeti|int2
+3Arama Motoru Pazarlamasý (SEM) danýþmanlýðý hizmeti|int2
+3Internet Analiz ve Raporlama hizmeti|int2
+2Yazýlým (Genel)|genelyazilim
+3Java programlamasý hizmeti|genelyazilim
+3.NET programlamasý hizmeti|genelyazilim
+3PHP programlamasý hizmeti|genelyazilim
+3ActionScript programlamasý hizmeti|genelyazilim
+3Visual Basic programlamasý hizmeti|genelyazilim
+3SQL programlamasi hizmeti|genelyazilim
+3Yazýlým geliþtirme danýþmanlýðý (UML, RUP, Agile vs.) hizmeti|genelyazilim
+3Bilgi teknolojileri sistemleri danýþmanlýðý hizmeti|genelyazilim
+3Arayüz tasarýmý (web / masaüstü) hizmeti|websitesi
+2Yazýlým (Mobil) hizmeti|mobilyazilim
+3iPad / iPhone aplikasyon geliþtirme hizmeti|mobilyazilim
+3Mobil Java aplikasyon geliþtirme hizmeti|mobilyazilim
+3Android aplikasyon geliþtirme hizmeti|mobilyazilim
+3Facebook aplikasyon geliþtirme hizmeti|int2
+3Arayüz tasarýmý (mobil aplikasyon) hizmeti|mobilyazilim

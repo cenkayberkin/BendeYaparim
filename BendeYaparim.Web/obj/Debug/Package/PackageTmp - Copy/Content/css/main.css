@@ -1,0 +1,246 @@
+/*....................
+bendeyaparim.com Css Dosyasý
+Volkan ÞENGÜL - http://www.volkansengul.com
+iletisim@volkansengul.com
+....................*/
+body					{margin:0px; background:#e5e6e8; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#686868; line-height:22px;}
+/*========== LINK ==========*/
+a						{color:#686868; text-decoration:none; outline:none;}
+a:hover					{text-decoration:none; border-bottom:#42bdcd solid 2px;}
+a img					{border:none;}
+/*========== FORM ==========*/
+form					{margin:0px; padding:0px;}
+input					{color:#585858;}
+textarea				{color:#585858;}
+select					{color:#585858;}
+.input					{border:#c0c0c0 solid 1px; font-family:Arial, Helvetica, sans-serif; color:#686868; font-size:12px; padding:3px;}
+.arama					{border:none; outline:none; width:183px; height:23px; padding-left:24px; background:url(../images/arainput.png) center left no-repeat;}
+/*========== RENK ==========*/
+.yesil					{color:#6da827;}
+.mavi					{color:#2e74b2;}
+.krmz					{color:#ce2700;}
+.sari					{color:#e79300;}
+.turkuaz				{color:#42bdcd;}
+.orange					{color:#FF6600;}
+/*========== TEXT .........*/
+.t1						{font-size:22px; font-weight:normal;}
+.t2						{font-size:18px; font-weight:normal;}
+.t2b					{font-size:16px; font-weight:normal;}
+.t3						{font-size:14px; font-weight:normal;}
+.t4						{font-size:10px; font-weight:normal;}
+/*========== BUTONLAR .........*/
+.btn_follow				{width:115px; height:30px; background:url(../images/btn/takipet.png) no-repeat; position:absolute; left:740px; top:95px; z-index:1006;}
+.btn_face				{width:35px; height:31px; background:url(../images/btn/face.png) no-repeat; position:absolute; left:870px; top:85px; z-index:1006;}
+.btn_tweet				{width:36px; height:31px; background:url(../images/btn/tweet.png) no-repeat; position:absolute; left:915px; top:80px; z-index:1006;}
+.btn_share				{height:24px; position:absolute; left:760px; bottom:2px; z-index:1006;}
+.icon_list				{margin:0px; padding:0px;}
+.icon_list li			{list-style:none; padding-bottom:7px; margin:8px 0px 8px 30px; border-bottom:#c0c0c0 solid 1px;}
+.icon_link				{display:block; min-height:28px; text-indent:40px; font-size:16px; font-weight:normal; line-height:32px; vertical-align:middle;}
+.icon_link:hover		{border:none;}
+
+.icon_ev				{background:url(../images/icons/ev.png) center left no-repeat;}
+.icon_bakim				{background:url(../images/icons/bakim.png) center left no-repeat;}
+.icon_egitim			{background:url(../images/icons/egitim.png) center left no-repeat;}
+.icon_sanat				{background:url(../images/icons/sanat.png) center left no-repeat;}
+.icon_saglik			{background:url(../images/icons/saglik.png) center left no-repeat;}
+.icon_is				{background:url(../images/icons/is.png) center left no-repeat;}
+.icon_ceviri			{background:url(../images/icons/ceviri.png) center left no-repeat;}
+.icon_bilisim			{background:url(../images/icons/bilisim.png) center left no-repeat;}
+.icon_asci				{background:url(../images/icons/yemek.png) center left no-repeat;}
+.icon_evcilhayvan		{background:url(../images/icons/evcil.png) center left no-repeat;}
+.icon_acikogretim		{background:url(../images/icons/acikogretim.png) center left no-repeat;}
+.icon_arac				{background:url(../images/icons/arac.png) center left no-repeat;}
+.icon_astroloji			{background:url(../images/icons/astroloji.png) center left no-repeat;}
+.icon_bahce				{background:url(../images/icons/bahce.png) center left no-repeat;}
+.icon_bakim				{background:url(../images/icons/bakim.png) center left no-repeat;}
+.icon_beyaz				{background:url(../images/icons/beyaz.png) center left no-repeat;}
+.icon_bilisim			{background:url(../images/icons/bilisim.png) center left no-repeat;}
+.icon_cevir				{background:url(../images/icons/cevir.png) center left no-repeat;}
+.icon_cevir2			{background:url(../images/icons/cevir.png) center left no-repeat;}
+.icon_ceviri			{background:url(../images/icons/ceviri.png) center left no-repeat;}
+.icon_cocuk				{background:url(../images/icons/cocuk.png) center left no-repeat;}
+.icon_cocuk2			{background:url(../images/icons/cocuk2.png) center left no-repeat;}
+.icon_cocukpartisi		{background:url(../images/icons/cocukpartisi.png) center left no-repeat;}
+.icon_dans				{background:url(../images/icons/dans.png) center left no-repeat;}
+.icon_davet				{background:url(../images/icons/davet.png) center left no-repeat;}
+.icon_dogum				{background:url(../images/icons/dogum.png) center left no-repeat;}
+.icon_dugun				{background:url(../images/icons/dugun.png) center left no-repeat;}
+.icon_egitim			{background:url(../images/icons/egitim.png) center left no-repeat;}
+.icon_elbeceri			{background:url(../images/icons/elbeceri.png) center left no-repeat;}
+.icon_elektronik		{background:url(../images/icons/elektronik.png) center left no-repeat;}
+.icon_ev				{background:url(../images/icons/ev.png) center left no-repeat;}
+.icon_evcil				{background:url(../images/icons/evcil.png) center left no-repeat;}
+.icon_evis				{background:url(../images/icons/evis.png) center left no-repeat;}
+.icon_evisleri			{background:url(../images/icons/evisleri.png) center left no-repeat;}
+.icon_genelyazilim		{background:url(../images/icons/genelyazilim.png) center left no-repeat;}
+.icon_gorsel			{background:url(../images/icons/gorsel.png) center left no-repeat;}
+.icon_gorseltasarim		{background:url(../images/icons/gorseltasarim.png) center left no-repeat;}
+.icon_guzellik			{background:url(../images/icons/guzellik.png) center left no-repeat;}
+.icon_idari				{background:url(../images/icons/idari.png) center left no-repeat;}
+.icon_ileriegitim		{background:url(../images/icons/ileriegitim.png) center left no-repeat;}
+.icon_int				{background:url(../images/icons/int2.png) center left no-repeat;}
+.icon_int2				{background:url(../images/icons/int2.png) center left no-repeat;}
+.icon_is				{background:url(../images/icons/is.png) center left no-repeat;}
+.icon_is2				{background:url(../images/icons/is2.png) center left no-repeat;}
+.icon_isyonetim 		{background:url(../images/icons/isyonetimi.png) center left no-repeat;}
+.icon_kisisel			{background:url(../images/icons/kisisel.png) center left no-repeat;}
+.icon_mobilyazilim		{background:url(../images/icons/mobilyazilim.png) center left no-repeat;}
+.icon_moda				{background:url(../images/icons/moda.png) center left no-repeat;}
+.icon_muzik				{background:url(../images/icons/muzik.png) center left no-repeat;}
+.icon_okul				{background:url(../images/icons/okul.png) center left no-repeat;}
+.icon_okulilk		    {background:url(../images/icons/okulilk.png) center left no-repeat;}
+.icon_ozel				{background:url(../images/icons/ozel.png) center left no-repeat;}
+.icon_ozel2				{background:url(../images/icons/ozel2.png) center left no-repeat;}
+.icon_ozelesya			{background:url(../images/icons/ozelesya.png) center left no-repeat;}
+.icon_proje				{background:url(../images/icons/proje.png) center left no-repeat;}
+.icon_reklam			{background:url(../images/icons/reklam.png) center left no-repeat;}
+.icon_saglik			{background:url(../images/icons/saglik.png) center left no-repeat;}
+.icon_saglik2			{background:url(../images/icons/saglik2.png) center left no-repeat;}
+.icon_saglikliyasam		{background:url(../images/icons/saglikliyasam.png) center left no-repeat;}
+.icon_sanat				{background:url(../images/icons/sanat.png) center left no-repeat;}
+.icon_sertifika			{background:url(../images/icons/sertifika.png) center left no-repeat;}
+.icon_sinav				{background:url(../images/icons/sinav.png) center left no-repeat;}
+.icon_soru				{background:url(../images/icons/soru.png) center left no-repeat;}
+.icon_spor				{background:url(../images/icons/spor.png) center left no-repeat;}
+.icon_teknoloji			{background:url(../images/icons/teknoloji.png) center left no-repeat;}
+.icon_temelegitim		{background:url(../images/icons/temelegitim.png) center left no-repeat;}
+.icon_tercumanlik		{background:url(../images/icons/tercumanlik.png) center left no-repeat;}
+.icon_websitesi			{background:url(../images/icons/websitesi.png) center left no-repeat;}
+.icon_yabancidil		{background:url(../images/icons/yabancidil.png) center left no-repeat;}
+.icon_yemek				{background:url(../images/icons/yemek.png) center left no-repeat;}
+.icon_diger				{background:url(../images/icons/evdiger.png) center left no-repeat;}
+.icon_				    {background:url(../images/icons/evdiger.png) center left no-repeat;}
+
+.tarih_bg				{height:20px; display:block; float:left; padding:1px 10px 14px 15px; background:url(../images/titles/tarih.png); 
+						color:#FFFFFF; font-size:12px; font-weight:bold;}
+.myTitle				{height:23px; display:block; float:left; padding:6px 10px 14px 15px; background:url(../images/titles/my_title.png) no-repeat; 
+						color:#FFFFFF; font-size:16px; font-weight:bold;}
+.mavialan_bg			{width:120px; height:20px; display:block; float:left; padding:3px 10px 14px 15px; 
+						background:url(../images/titles/mavialan.png) 0px 2px no-repeat; color:#FFFFFF; font-size:12px; font-weight:bold;}
+.author_bg				{width:116px; height:23px; display:block; float:left; background:url(../images/titles/author.png) no-repeat; 
+						padding:1px 0px 0px 30px; margin-left:10px; font-weight:bold;}
+.myBtn					{display:block; float:left; padding:2px 5px 2px 5px; background:#f68a1f; color:#ffffff; margin-right:20px; border:none; cursor:hand;}
+.myBtn:hover			{background:#ff6600; color:#ffffff; border:none;}
+.myBtn2					{display:block; float:left; padding:2px 10px 2px 10px; background:#ffffff; margin-right:20px; border:#42bdcd 1px solid !important;}
+.myBtn2:hover			{background:#42bdcd; color:#ffffff; border:none;}
+.pageBtn				{display:block; float:left; padding:1px 5px 1px 5px; background:#42bdcd; color:#ffffff; margin-right:10px; border:none; cursor:hand;}
+.pageBtn:hover			{background:#ff6600; color:#ffffff; border:none;}
+.shareBtn				{display:block; float:right; width:88px; height:31px; background:url(../images/btn/paylas.png); margin-right:20px;}
+.shareBtn:hover			{border:none;}
+
+.inactive_link			{color:#787878 !important; background:none !important; opacity:0.5; filter:alpha(opacity=50);}
+.inacitve_link:hover	{color:#787878 !important; background:none !important; opacity:0.5; filter:alpha(opacity=50);}
+
+.inactive_link2			{color:#787878 !important; background:none !important; opacity:0.5; filter:alpha(opacity=50); display:none;}
+.inacitve_link2:hover	{color:#787878 !important; background:none !important; opacity:0.5; filter:alpha(opacity=50); display:none;}
+
+.selectedCity 			{color:#181818; font-weight:bold; border-bottom:#42bdcd solid 2px;}
+/*========== UYARILAR ==========*/
+div#uyari_yesil			{width:90%; background:#e0f2cb; border:#ccebac solid 1px; padding:5px; color:#6da827;}
+div#uyari_mavi			{width:90%; background:#e4edf5; border:#d8e1e9 solid 1px; padding:5px; color:#2e74b2;}
+div#uyari_kirmizi		{width:90%; background:#fbd3b1; border:#f5c69a solid 1px; padding:5px; color:#ce2700;}
+div#uyari_sari			{width:90%; background:#fff4cc; border:#f8e3ac solid 1px; padding:5px; color:#e79300;}
+.inp_uyari				{background:#fbd3b1; border:#ce2700 solid 1px; padding:3px; color:#ce2700;}
+.inp_uyari_txt			{width:400px !important;}
+/*========== GENEL ==========*/
+.left					{float:left;}
+.right					{float:right;}
+.right_title			{float:right; margin-right:-7px;}
+.center					{margin-left:auto !important; margin-right:auto !important;}
+.clear					{clear:both;}
+.noborder				{border:none !important;}
+.noborder:hover			{border:none !important;}
+.nomargin				{margin:0px !important;}
+.nopadding				{padding:0px !important;}
+.mleft10				{margin-left:10px;}
+.mright10				{margin-right:10px;}
+.mleft20				{margin-left:20px;}
+.mright20				{margin-right:20px;}
+.mleft40				{margin-left:40px;}
+.mright40				{margin-right:40px;}
+.pleft10				{padding-left:10px;}
+.pright10				{padding-right:10px;}
+.pleft20				{padding-left:20px;}
+.pright20				{padding-right:20px;}
+.w100					{width:100px;}
+.w125					{width:125px;}
+.w140					{width:140px;}
+.w200					{width:200px;}
+.w250					{width:250px;}
+.w300					{width:300px;}
+.mini					{font-size:10px; line-height:18px;}
+/*========== ÝÇERÝK ==========*/
+div.limit				{width:1008px; position:relative;}
+.left_side				{width:644px; background:url(../images/left_bg.png) repeat-y; padding:10px 0px 10px 1px;}
+.right_side				{width:361px; background:url(../images/right_bg.png) repeat-y; padding:10px 0px 10px 2px;}
+div.content				{width:100%; background:url(../images/content_bg.png) repeat-y; padding:10px 0px 10px 0px;}
+.top_shadow				{width:100%; height:6px; background:url(../images/top_shadow.png) center left no-repeat;}
+.left_shadow			{background:url(../images/left_shadow.png) repeat-y; padding:10px 0px 10px 0px; margin:-10px 0px -10px 0px;}
+.topline				{width:100%; height:5px; background:url(../images/topline.png) center left no-repeat;}
+.topline2				{width:100%; height:5px; background:url(../images/topline2.png) center left no-repeat;}
+.subline				{width:100%; height:15px; background:url(../images/subline.png) center left no-repeat;}
+.subline2				{width:100%; height:15px; background:url(../images/subline2.png) center left no-repeat;}
+.hr						{width:90%; height:1px; background:#a0a0a0; border-bottom:#ffffff solid 1px; margin:10px auto 10px auto;}
+.hr2					{width:580px; height:1px; background:#a0a0a0; border-bottom:#ffffff solid 1px; margin:10px 0px 10px 0px;}
+p.SubCont				{padding:0px 30px 0px 30px; font-size:14px; font-weight:bold; text-align:justify; margin:0px;}
+p.SubCont a				{font-weight:normal;}
+/*========== HEADER ==========*/
+div#header				{width:100%; height:185px; background:url(../images/logokutu.png) no-repeat; position:relative;}
+div#header_topline		{width:945px; height:50px; background:#42bdcd url(../images/header_topline.png) no-repeat; margin-top:25px;}
+div#header_topline a.btn_l{padding:1px 5px 1px 5px; background:#FFFFFF; display:block; float:left; margin:15px 0px 0px 20px; 
+						border:#484848 solid 1px; color:#f58a22; font-size:11px; font-weight:bold;}
+div#header_topline a.btn_r{padding:1px 5px 1px 5px; background:#FFFFFF; display:block; float:right; margin:15px 20px 0px 0px; 
+						border:#484848 solid 1px; color:#f58a22; font-size:11px; font-weight:bold;}
+img#logo				{position:absolute; z-index:1005; left:11px; top:18px;}
+.myNick					{width:116px; height:23px; display:block; float:left; background:url(../images/titles/author.png) no-repeat; padding:1px 0px 0px 30px; 
+						margin:15px 0px 0px 20px; font-weight:bold;}
+/*========== FOOTER ==========*/
+div#footer				{width:100%; height:185px; background:url(../images/logokutu.png) no-repeat; position:relative;}
+div#footer_subline		{width:948px; height:50px; color:#ffffff; font-size:11px; background:#42bdcd; margin:0px 0px 0px 33px;}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+	color: #ff0000;
+}
+
+.field-validation-valid {
+	display: none;
+}
+
+.input-validation-error {
+	border: 1px solid #ff0000;
+	background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+	margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+	margin: 0.5em 0 0 0;
+}
+
+.text-box {
+	width: 30em;
+}
+
+.text-box.multi-line {
+	height: 6.5em;
+}
+
+.tri-state {
+	width: 6em;
+}

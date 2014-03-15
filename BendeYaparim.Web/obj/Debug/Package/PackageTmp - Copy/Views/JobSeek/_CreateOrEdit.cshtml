@@ -1,0 +1,28 @@
+@model BendeYaparim.Web.Models.JobSeek
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ContentBody)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ContentBody)
+    @Html.ValidationMessageFor(model => model.ContentBody)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.CreateDate)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.CreateDate)
+    @Html.ValidationMessageFor(model => model.CreateDate)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Price)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Price)
+    @Html.ValidationMessageFor(model => model.Price)
+</div>
+
